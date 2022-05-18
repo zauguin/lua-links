@@ -1,0 +1,20 @@
+\input{regression-test}
+\documentclass{article}
+\usepackage{blindtext}
+\usepackage{lua-links}
+\LuaLinksMode=1
+\begin{document}
+\showoutput
+\START
+\pdfextension dest name{Here} xyz
+\blindtext[5]%
+
+\LuaLinkStart{\pdfextension startlink goto name {Here}}%
+\blindtext[5]%
+
+\LuaLinkStop
+\blindtext[5]%
+
+\clearpage
+\END
+\end{document}

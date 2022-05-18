@@ -1,0 +1,340 @@
+% \iffalse meta-comment
+%
+%% Copyright (C) 2020-2021 by Marcel Krueger
+%%
+%% This file may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either
+%% version 1.3c of this license or (at your option) any later
+%% version. The latest version of this license is in:
+%%
+%% http://www.latex-project.org/lppl.txt
+%%
+%% and version 1.3 or later is part of all distributions of
+%% LaTeX version 2005/12/01 or later.
+%
+%<*batch>
+%<*gobble>
+\ifx\jobname\relax\let\documentclass\undefined\fi
+\ifx\documentclass\undefined
+\csname fi\endcsname
+%</gobble>
+\input docstrip.tex
+\keepsilent
+\let\MetaPrefix\relax
+\preamble
+\endpreamble
+\postamble
+\endpostamble
+\def\MetaPrefix{--}
+\generate{%
+  \file{lua-links.lua}{\from{lua-links.dtx}{luacode}}%
+}
+\let\MetaPrefix\DoubleperCent
+\generate{\file{lua-links.sty}{\from{lua-links.dtx}{package}}}
+\endbatchfile
+%</batch>
+%<*gobble>
+\fi
+\expandafter\ifx\csname @currname\endcsname\empty
+\csname fi\endcsname
+%</gobble>
+%<*driver>
+\documentclass{article}
+\usepackage{lua-links}
+\usepackage{csquotes,doc,framed,hologo,hyperref,luacolor}
+\RecordChanges
+\begin{document}
+\DocInput{lua-links.dtx}
+\PrintIndex
+\PrintChanges
+\end{document}
+%</driver>
+%<*gobble>
+\fi
+%</gobble>
+% \fi
+%
+%
+% \GetFileInfo{lua-links.sty}
+% \title{The lua-links package\thanks{This document
+%        corresponds to lua-links~\fileversion, dated~\filedate.}}
+% \author{Marcel Kr\"uger \\ \href{mailto:tex@2krueger.de}{tex@2krueger.de}}
+%
+% \maketitle
+% \section{Usage}
+% If only I knew.
+% This should be added at some point I guess.
+% 
+% \StopEventually{}
+% \section{The implementation}
+% \changes{0.1}{2022-05-18}{Initial release}
+% \subsection{Lua module}
+% First define the Lua module:
+% \iffalse
+%<*gobble>
+\begin{docstrip-luacode}{lua-links}
+%</gobble>
+%<*luacode>
+% \fi
+%    \begin{macrocode}
+local hlist_t = node.id'hlist'
+local vlist_t = node.id'vlist'
+local kern_t = node.id'kern'
+local glue_t = node.id'glue'
+local dir_t = node.id'dir'
+local math_t = node.id'math'
+local penalty_t = node.id'penalty'
+local whatsit_t = node.id'whatsit'
+local start_link_t = node.subtype'pdf_start_link'
+local end_link_t = node.subtype'pdf_end_link'
+
+local delayed_ids = {
+  [dir_t] = true,
+  [math_t] = true,
+  [glue_t] = true,
+  [kern_t] = true,
+  [penalty_t] = true,
+}
+
+local properties = node.direct.get_properties_table()
+
+local has_attribute = node.direct.has_attribute
+local set_attribute = node.direct.set_attribute
+local dimensions = node.direct.dimensions
+local flush_node = node.direct.flush_node
+local getattr = node.direct.getattributelist
+local getboth = node.direct.getboth
+local getfield = node.direct.getfield
+local getglue = node.direct.getglue
+local getleader = node.direct.getleader
+local getlist = node.direct.getlist
+local setlist = node.direct.setlist
+local setheight = node.direct.setheight
+local setdepth = node.direct.setdepth
+local getheight = node.direct.getheight
+local getdepth = node.direct.getdepth
+local getnext = node.direct.getnext
+local getshift = node.direct.getshift
+local getid = node.direct.getid
+local getsubtype = node.direct.getsubtype
+local insert_after = node.direct.insert_after
+local insert_before = node.direct.insert_before
+local nodecopy = node.direct.copy
+local nodenew = node.direct.new
+local setboth = node.direct.setboth
+local setlink = node.direct.setlink
+local hpack = node.direct.hpack
+local setfield = node.direct.setfield
+local slide = node.direct.slide
+local setattr = node.direct.setattributelist
+local setglue = node.direct.setglue
+local setnext = node.direct.setnext
+local setshift = node.direct.setshift
+local todirect = node.direct.todirect
+local tonode = node.direct.tonode
+local traverse = node.direct.traverse
+local traverse_id = node.direct.traverse_id
+local traverse_list = node.direct.traverse_list
+
+local tokennew = token.new
+local set_lua = token.set_lua
+local scan_keyword = token.scan_keyword
+local scan_list = token.scan_list
+local scan_int = token.scan_int
+local scan_toks = token.scan_toks
+local put_next = token.put_next
+local texerror = tex.error
+
+local functions = lua.get_functions_table()
+local char_given = token.command_id'char_given'
+
+local attr = luatexbase.new_attribute'lua-links'
+local mode_int = token.create'LuaLinksMode'.index
+local links = {}
+
+local vmode do
+  for k, v in pairs(tex.getmodevalues()) do
+  if v == "vertical" then
+      vmode = k
+      break
+    end
+  end
+end
+local texnest = tex.nest
+
+%    \end{macrocode}
+% This is stealing code from |lua-ul|.
+% Yes, that's also why the macro is still prefixed with |luaul|.
+%    \begin{macrocode}
+local scan_raw_hlist do
+  local create = token.create
+  local lbrace, rbrace = token.new(0x7B, 1), token.new(0x7D, 2)
+  tex.enableprimitives('luaul@', {'everyhbox'})
+  local set_everyhbox do
+    local set_toks1, set_toks2 = {create'immediateassignment',
+                                  create'luaul@everyhbox', lbrace},
+                                 {rbrace, create'relax'}
+    function set_everyhbox(t)
+      token.put_next(set_toks2)
+      token.put_next(t)
+      token.put_next(set_toks1)
+      token.scan_token()
+    end
+  end
+  local func = luatexbase.new_luafunction"luaul.restore_everyhbox"
+  local everyhbox_saved
+  functions[func] = function() set_everyhbox(everyhbox_saved) end
+  local toks = {rbrace, -- Housekeeping, only for balance reasons
+                lbrace, create'the', create'luaul@everyhbox', rbrace,
+                create'hpack', lbrace,
+                  token.new(func, token.command_id'lua_call')}
+  function scan_raw_hlist()
+    assert(token.get_next().command == 1)
+    put_next(toks)
+    token.get_next() -- Scan a corresponding brace to keep TeX's brace tracking happy
+    local saved_toks = scan_toks(false, true)
+    everyhbox_saved = saved_toks
+    set_everyhbox{}
+    local list = scan_list()
+    set_everyhbox(saved_toks)
+    return list
+  end
+end
+
+local function start_link()
+  local b = todirect(scan_raw_hlist())
+  local link = getlist(b)
+  if getid(link) ~= whatsit_t or getsubtype(link) ~= start_link_t then
+    texerror("Link required", {"A link command is required but the \z
+      link doesn't look like a link"})
+  else
+    local after = getnext(link)
+    if after then
+      texerror("Link required", {"Something unexpected followed the link. \z
+        It will be ignored for now."})
+      setnext(lead, nil)
+    end
+    table.insert(links, link)
+    setlist(b, after)
+    flush_node(b)
+  end
+  tex.attribute[attr] = #links
+end
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+local function stop_link()
+% local reset_all = scan_keyword'*'
+  tex.attribute[attr] = -0x7FFFFFFF
+end
+
+local start_link_func =
+    luatexbase.new_luafunction"LuaLinkStart"
+local stop_link_func =
+    luatexbase.new_luafunction"LuaLinkStop"
+set_lua("LuaLinkStart", start_link_func, "protected")
+set_lua("LuaLinkStop", stop_link_func, "protected")
+functions[start_link_func] = start_link
+functions[stop_link_func] = stop_link
+
+%    \end{macrocode}
+% Add a link over some content
+%    \begin{macrocode}
+local add_link_hlist
+local function add_link_vlist(head, outer_value, box, mode)
+  local iter, state, n = traverse_list(head) -- FIXME: unset nodes
+  for n, t, sub, list in traverse_list(head) do
+    local processed = (t == hlist_t and add_link_hlist or add_link_vlist)(list, outer_value, n, mode)
+    if processed ~= list then
+      setlist(n, processed)
+    end
+  end
+  return head
+end
+function add_link_hlist(head, outer_value, box, mode)
+% slide(head)
+  local last_value = outer_value
+  local delayed
+  for n, id, subtype in traverse(head) do
+    if mode ~= 0 and delayed_ids[id] then
+      delayed = delayed or n
+    else
+      local new_value = has_attribute(n, attr)
+      if new_value ~= last_value then
+        if last_value then
+          local end_link = nodenew(whatsit_t, end_link_t)
+          head = insert_before(head, n, end_link)
+        end
+        if new_value then
+          local start_link = nodecopy(links[new_value])
+          head = insert_before(head, delayed or n, start_link)
+        end
+        last_value = new_value
+      end
+      if not last_value then
+        local list = getlist(n)
+        if list then
+          local processed = (id == hlist_t and add_link_hlist or add_link_vlist)(list, last_value, n, mode)
+          if processed ~= list then
+            setlist(n, processed)
+          end
+        end
+      end
+      delayed = nil
+    end
+  end
+  if last_value then
+    local end_link = nodenew(whatsit_t, end_link_t)
+    if delayed then
+      head = insert_before(head, delayed, end_link)
+    else
+      head = insert_after(head, nil, end_link)
+    end
+  end
+  return head
+end
+luatexbase.add_to_callback('pre_shipout_filter', function(n)
+  local mode = tex.count[mode_int]
+  n = todirect(n)
+  local list = getlist(n)
+  local processed = (id == hlist_t and add_link_hlist or add_link_vlist)(list, nil, n, mode)
+  if processed ~= list then
+    setlist(n, processed)
+  end
+  return true
+end, 'lua_links')
+%    \end{macrocode}
+% \iffalse
+%</luacode>
+%<*gobble>
+\end{docstrip-luacode}
+%</gobble>
+% \fi
+% \subsection{\TeX\ support package}
+% Now use this stuff from \TeX
+% \iffalse
+%<*package>
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage
+  {lua-links}
+  [2022-05-18 v0.1 Lua attribute based links]
+
+% \fi
+% Only \hologo{LuaLaTeX} is supported.
+% For other engines we show an error.
+%    \begin{macrocode}
+\ifx\directlua\undefined
+  \PackageError{lua-ul}{LuaLaTeX required}%
+  {Lua-links requires LuaLaTeX.
+   Maybe you forgot to switch the engine in your editor?}
+\fi
+%    \end{macrocode}
+% Otherwise there is not much to do at the moment.
+%    \begin{macrocode}
+\newcount \LuaLinksMode
+\directlua{require'lua-links'}
+%    \end{macrocode}
+% \iffalse
+%</package>
+% \fi
+% \Finale
