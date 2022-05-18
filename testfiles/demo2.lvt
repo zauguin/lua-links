@@ -2,7 +2,7 @@
 \documentclass{article}
 \usepackage{blindtext}
 \usepackage{lua-links}
-\LuaLinksMode=1
+\LuaLinksMode=7
 \begin{document}
 \showoutput
 \START

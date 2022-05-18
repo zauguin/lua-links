@@ -4522,7 +4522,7 @@ Completed box being shipped out [2]
 ..\vbox(12.0+0.0)x345.0, glue set 12.0fil, direction TLT
 ...\glue 0.0 plus 1.0fil
 ...\hbox(0.0+0.0)x345.0, direction TLT
-....\pdfstartlink(*+*)x* action goto name{Here}
+....\pdfstartlink(0.0+0.0)x345.0 action goto name{Here}
 ....\hbox(0.0+0.0)x345.0, direction TLT
 ....\pdfendlink
 ..\glue 25.0
@@ -4925,7 +4925,7 @@ Completed box being shipped out [2]
 ...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 3.12
 ...\hbox(6.94+2.06)x345.0, glue set 0.72125, direction TLT
-....\pdfstartlink(*+*)x* action goto name{Here}
+....\pdfstartlink(6.94+2.06)x345.0 action goto name{Here}
 ....\localpar
 .....\localinterlinepenalty=0
 .....\localbrokenpenalty=0
@@ -5022,7 +5022,7 @@ Completed box being shipped out [2]
 ...\penalty 150
 ...\glue(\baselineskip) 2.89
 ...\hbox(7.05+1.94)x345.0, glue set - 0.02495, direction TLT
-....\pdfstartlink(*+*)x* action goto name{Here}
+....\pdfstartlink(7.05+1.94)x345.0 action goto name{Here}
 ....\TU/lmr/m/n/10 f
 ....\TU/lmr/m/n/10 a
 ....\discretionary (penalty 50)
@@ -5128,7 +5128,7 @@ Completed box being shipped out [2]
 ....\glue(\rightskip) 0.0
 ...\glue(\baselineskip) 3.01
 ...\hbox(7.05+1.94)x345.0, glue set - 0.54599, direction TLT
-....\pdfstartlink(*+*)x* action goto name{Here}
+....\pdfstartlink(7.05+1.94)x345.0 action goto name{Here}
 ....\TU/lmr/m/n/10 m
 ....\TU/lmr/m/n/10 i
 ....\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
@@ -5236,7 +5236,7 @@ Completed box being shipped out [2]
 ....\glue(\rightskip) 0.0
 ...\glue(\baselineskip) 3.12
 ...\hbox(6.94+2.06)x345.0, glue set 0.78654, direction TLT
-....\pdfstartlink(*+*)x* action goto name{Here}
+....\pdfstartlink(6.94+2.06)x345.0 action goto name{Here}
 ....\TU/lmr/m/n/10 a
 ....\TU/lmr/m/n/10 u
 ....\discretionary (penalty 50)
@@ -5335,7 +5335,7 @@ Completed box being shipped out [2]
 ....\glue(\rightskip) 0.0
 ...\glue(\baselineskip) 3.0
 ...\hbox(6.94+1.94)x345.0, glue set 0.78569, direction TLT
-....\pdfstartlink(*+*)x* action goto name{Here}
+....\pdfstartlink(6.94+1.94)x345.0 action goto name{Here}
 ....\TU/lmr/m/n/10 u
 ....\TU/lmr/m/n/10 t
 ....\TU/lmr/m/n/10 ,
@@ -5431,7 +5431,7 @@ Completed box being shipped out [2]
 ....\glue(\rightskip) 0.0
 ...\glue(\baselineskip) 3.01
 ...\hbox(7.05+2.06)x345.0, glue set - 0.49713, direction TLT
-....\pdfstartlink(*+*)x* action goto name{Here}
+....\pdfstartlink(7.05+2.06)x345.0 action goto name{Here}
 ....\TU/lmr/m/n/10 i
 ....\TU/lmr/m/n/10 p
 ....\discretionary (penalty 50)
@@ -5531,7 +5531,7 @@ Completed box being shipped out [2]
 ....\glue(\rightskip) 0.0
 ...\glue(\baselineskip) 2.89
 ...\hbox(7.05+2.06)x345.0, glue set 0.72202, direction TLT
-....\pdfstartlink(*+*)x* action goto name{Here}
+....\pdfstartlink(7.05+2.06)x345.0 action goto name{Here}
 ....\TU/lmr/m/n/10 S
 ....\TU/lmr/m/n/10 e
 ....\TU/lmr/m/n/10 d
@@ -5625,7 +5625,7 @@ Completed box being shipped out [2]
 ....\glue(\rightskip) 0.0
 ...\glue(\baselineskip) 3.0
 ...\hbox(6.94+0.11)x345.0, glue set 0.09009, direction TLT
-....\pdfstartlink(*+*)x* action goto name{Here}
+....\pdfstartlink(6.94+0.11)x345.0 action goto name{Here}
 ....\TU/lmr/m/n/10 l
 ....\TU/lmr/m/n/10 e
 ....\TU/lmr/m/n/10 o
@@ -5728,7 +5728,7 @@ Completed box being shipped out [2]
 ....\glue(\rightskip) 0.0
 ...\glue(\baselineskip) 4.95
 ...\hbox(6.94+2.06)x345.0, glue set 0.9836, direction TLT
-....\pdfstartlink(*+*)x* action goto name{Here}
+....\pdfstartlink(6.94+2.06)x345.0 action goto name{Here}
 ....\TU/lmr/m/n/10 m
 ....\TU/lmr/m/n/10 a
 ....\TU/lmr/m/n/10 u
@@ -5827,7 +5827,7 @@ Completed box being shipped out [2]
 ....\glue(\rightskip) 0.0
 ...\glue(\baselineskip) 3.0
 ...\hbox(6.94+1.94)x345.0, glue set 0.17186, direction TLT
-....\pdfstartlink(*+*)x* action goto name{Here}
+....\pdfstartlink(6.94+1.94)x345.0 action goto name{Here}
 ....\TU/lmr/m/n/10 M
 ....\TU/lmr/m/n/10 a
 ....\TU/lmr/m/n/10 u
@@ -5916,7 +5916,7 @@ Completed box being shipped out [2]
 ....\glue(\rightskip) 0.0
 ...\glue(\baselineskip) 3.12
 ...\hbox(6.94+2.06)x345.0, glue set - 0.83942, direction TLT
-....\pdfstartlink(*+*)x* action goto name{Here}
+....\pdfstartlink(6.94+2.06)x345.0 action goto name{Here}
 ....\TU/lmr/m/n/10 s
 ....\TU/lmr/m/n/10 e
 ....\TU/lmr/m/n/10 m
@@ -6017,7 +6017,7 @@ Completed box being shipped out [2]
 ....\glue(\rightskip) 0.0
 ...\glue(\baselineskip) 2.89
 ...\hbox(7.05+1.94)x345.0, glue set - 0.02495, direction TLT
-....\pdfstartlink(*+*)x* action goto name{Here}
+....\pdfstartlink(7.05+1.94)x345.0 action goto name{Here}
 ....\TU/lmr/m/n/10 f
 ....\TU/lmr/m/n/10 a
 ....\discretionary (penalty 50)
@@ -6123,7 +6123,7 @@ Completed box being shipped out [2]
 ....\glue(\rightskip) 0.0
 ...\glue(\baselineskip) 3.01
 ...\hbox(7.05+1.94)x345.0, glue set - 0.54599, direction TLT
-....\pdfstartlink(*+*)x* action goto name{Here}
+....\pdfstartlink(7.05+1.94)x345.0 action goto name{Here}
 ....\TU/lmr/m/n/10 m
 ....\TU/lmr/m/n/10 i
 ....\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
@@ -6231,7 +6231,7 @@ Completed box being shipped out [2]
 ....\glue(\rightskip) 0.0
 ...\glue(\baselineskip) 3.12
 ...\hbox(6.94+2.06)x345.0, glue set 0.78654, direction TLT
-....\pdfstartlink(*+*)x* action goto name{Here}
+....\pdfstartlink(6.94+2.06)x345.0 action goto name{Here}
 ....\TU/lmr/m/n/10 a
 ....\TU/lmr/m/n/10 u
 ....\discretionary (penalty 50)
@@ -6330,7 +6330,7 @@ Completed box being shipped out [2]
 ....\glue(\rightskip) 0.0
 ...\glue(\baselineskip) 3.0
 ...\hbox(6.94+1.94)x345.0, glue set 0.78569, direction TLT
-....\pdfstartlink(*+*)x* action goto name{Here}
+....\pdfstartlink(6.94+1.94)x345.0 action goto name{Here}
 ....\TU/lmr/m/n/10 u
 ....\TU/lmr/m/n/10 t
 ....\TU/lmr/m/n/10 ,
@@ -6426,7 +6426,7 @@ Completed box being shipped out [2]
 ....\glue(\rightskip) 0.0
 ...\glue(\baselineskip) 3.01
 ...\hbox(7.05+2.06)x345.0, glue set - 0.49713, direction TLT
-....\pdfstartlink(*+*)x* action goto name{Here}
+....\pdfstartlink(7.05+2.06)x345.0 action goto name{Here}
 ....\TU/lmr/m/n/10 i
 ....\TU/lmr/m/n/10 p
 ....\discretionary (penalty 50)
@@ -6526,7 +6526,7 @@ Completed box being shipped out [2]
 ....\glue(\rightskip) 0.0
 ...\glue(\baselineskip) 2.89
 ...\hbox(7.05+2.06)x345.0, glue set 0.72202, direction TLT
-....\pdfstartlink(*+*)x* action goto name{Here}
+....\pdfstartlink(7.05+2.06)x345.0 action goto name{Here}
 ....\TU/lmr/m/n/10 S
 ....\TU/lmr/m/n/10 e
 ....\TU/lmr/m/n/10 d
@@ -6620,7 +6620,7 @@ Completed box being shipped out [2]
 ....\glue(\rightskip) 0.0
 ...\glue(\baselineskip) 3.0
 ...\hbox(6.94+0.11)x345.0, glue set 0.09009, direction TLT
-....\pdfstartlink(*+*)x* action goto name{Here}
+....\pdfstartlink(6.94+0.11)x345.0 action goto name{Here}
 ....\TU/lmr/m/n/10 l
 ....\TU/lmr/m/n/10 e
 ....\TU/lmr/m/n/10 o
@@ -6723,7 +6723,7 @@ Completed box being shipped out [2]
 ....\glue(\rightskip) 0.0
 ...\glue(\baselineskip) 4.95
 ...\hbox(6.94+2.06)x345.0, glue set 0.9836, direction TLT
-....\pdfstartlink(*+*)x* action goto name{Here}
+....\pdfstartlink(6.94+2.06)x345.0 action goto name{Here}
 ....\TU/lmr/m/n/10 m
 ....\TU/lmr/m/n/10 a
 ....\TU/lmr/m/n/10 u
@@ -6822,7 +6822,7 @@ Completed box being shipped out [2]
 ....\glue(\rightskip) 0.0
 ...\glue(\baselineskip) 3.0
 ...\hbox(6.94+1.94)x345.0, glue set 0.17186, direction TLT
-....\pdfstartlink(*+*)x* action goto name{Here}
+....\pdfstartlink(6.94+1.94)x345.0 action goto name{Here}
 ....\TU/lmr/m/n/10 M
 ....\TU/lmr/m/n/10 a
 ....\TU/lmr/m/n/10 u
@@ -6911,7 +6911,7 @@ Completed box being shipped out [2]
 ....\glue(\rightskip) 0.0
 ...\glue(\baselineskip) 3.12
 ...\hbox(6.94+2.06)x345.0, glue set - 0.83942, direction TLT
-....\pdfstartlink(*+*)x* action goto name{Here}
+....\pdfstartlink(6.94+2.06)x345.0 action goto name{Here}
 ....\TU/lmr/m/n/10 s
 ....\TU/lmr/m/n/10 e
 ....\TU/lmr/m/n/10 m
@@ -7012,7 +7012,7 @@ Completed box being shipped out [2]
 ....\glue(\rightskip) 0.0
 ...\glue(\baselineskip) 2.89
 ...\hbox(7.05+1.94)x345.0, glue set - 0.02495, direction TLT
-....\pdfstartlink(*+*)x* action goto name{Here}
+....\pdfstartlink(7.05+1.94)x345.0 action goto name{Here}
 ....\TU/lmr/m/n/10 f
 ....\TU/lmr/m/n/10 a
 ....\discretionary (penalty 50)
@@ -7118,7 +7118,7 @@ Completed box being shipped out [2]
 ....\glue(\rightskip) 0.0
 ...\glue(\baselineskip) 3.01
 ...\hbox(7.05+1.94)x345.0, glue set - 0.54599, direction TLT
-....\pdfstartlink(*+*)x* action goto name{Here}
+....\pdfstartlink(7.05+1.94)x345.0 action goto name{Here}
 ....\TU/lmr/m/n/10 m
 ....\TU/lmr/m/n/10 i
 ....\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
@@ -7226,7 +7226,7 @@ Completed box being shipped out [2]
 ....\glue(\rightskip) 0.0
 ...\glue(\baselineskip) 3.12
 ...\hbox(6.94+2.06)x345.0, glue set 0.78654, direction TLT
-....\pdfstartlink(*+*)x* action goto name{Here}
+....\pdfstartlink(6.94+2.06)x345.0 action goto name{Here}
 ....\TU/lmr/m/n/10 a
 ....\TU/lmr/m/n/10 u
 ....\discretionary (penalty 50)
@@ -7325,7 +7325,7 @@ Completed box being shipped out [2]
 ....\glue(\rightskip) 0.0
 ...\glue(\baselineskip) 3.0
 ...\hbox(6.94+1.94)x345.0, glue set 0.78569, direction TLT
-....\pdfstartlink(*+*)x* action goto name{Here}
+....\pdfstartlink(6.94+1.94)x345.0 action goto name{Here}
 ....\TU/lmr/m/n/10 u
 ....\TU/lmr/m/n/10 t
 ....\TU/lmr/m/n/10 ,
@@ -7421,7 +7421,7 @@ Completed box being shipped out [2]
 ....\glue(\rightskip) 0.0
 ...\glue(\baselineskip) 3.01
 ...\hbox(7.05+2.06)x345.0, glue set - 0.49713, direction TLT
-....\pdfstartlink(*+*)x* action goto name{Here}
+....\pdfstartlink(7.05+2.06)x345.0 action goto name{Here}
 ....\TU/lmr/m/n/10 i
 ....\TU/lmr/m/n/10 p
 ....\discretionary (penalty 50)
@@ -7521,7 +7521,7 @@ Completed box being shipped out [2]
 ....\glue(\rightskip) 0.0
 ...\glue(\baselineskip) 2.89
 ...\hbox(7.05+2.06)x345.0, glue set 0.72202, direction TLT
-....\pdfstartlink(*+*)x* action goto name{Here}
+....\pdfstartlink(7.05+2.06)x345.0 action goto name{Here}
 ....\TU/lmr/m/n/10 S
 ....\TU/lmr/m/n/10 e
 ....\TU/lmr/m/n/10 d
@@ -7615,7 +7615,7 @@ Completed box being shipped out [2]
 ....\glue(\rightskip) 0.0
 ...\glue(\baselineskip) 3.0
 ...\hbox(6.94+0.11)x345.0, glue set 0.09009, direction TLT
-....\pdfstartlink(*+*)x* action goto name{Here}
+....\pdfstartlink(6.94+0.11)x345.0 action goto name{Here}
 ....\TU/lmr/m/n/10 l
 ....\TU/lmr/m/n/10 e
 ....\TU/lmr/m/n/10 o
@@ -7718,7 +7718,7 @@ Completed box being shipped out [2]
 ....\glue(\rightskip) 0.0
 ...\glue(\baselineskip) 4.95
 ...\hbox(6.94+2.06)x345.0, glue set 0.9836, direction TLT
-....\pdfstartlink(*+*)x* action goto name{Here}
+....\pdfstartlink(6.94+2.06)x345.0 action goto name{Here}
 ....\TU/lmr/m/n/10 m
 ....\TU/lmr/m/n/10 a
 ....\TU/lmr/m/n/10 u
@@ -7817,7 +7817,7 @@ Completed box being shipped out [2]
 ....\glue(\rightskip) 0.0
 ...\glue(\baselineskip) 3.0
 ...\hbox(6.94+1.94)x345.0, glue set 0.17186, direction TLT
-....\pdfstartlink(*+*)x* action goto name{Here}
+....\pdfstartlink(6.94+1.94)x345.0 action goto name{Here}
 ....\TU/lmr/m/n/10 M
 ....\TU/lmr/m/n/10 a
 ....\TU/lmr/m/n/10 u
@@ -7906,7 +7906,7 @@ Completed box being shipped out [2]
 ....\glue(\rightskip) 0.0
 ...\glue(\baselineskip) 3.12
 ...\hbox(6.94+2.06)x345.0, glue set - 0.83942, direction TLT
-....\pdfstartlink(*+*)x* action goto name{Here}
+....\pdfstartlink(6.94+2.06)x345.0 action goto name{Here}
 ....\TU/lmr/m/n/10 s
 ....\TU/lmr/m/n/10 e
 ....\TU/lmr/m/n/10 m
@@ -8007,7 +8007,7 @@ Completed box being shipped out [2]
 ....\glue(\rightskip) 0.0
 ...\glue(\baselineskip) 2.89
 ...\hbox(7.05+1.94)x345.0, glue set - 0.02495, direction TLT
-....\pdfstartlink(*+*)x* action goto name{Here}
+....\pdfstartlink(7.05+1.94)x345.0 action goto name{Here}
 ....\TU/lmr/m/n/10 f
 ....\TU/lmr/m/n/10 a
 ....\discretionary (penalty 50)
@@ -8113,7 +8113,7 @@ Completed box being shipped out [2]
 ....\glue(\rightskip) 0.0
 ...\glue(\baselineskip) 3.01
 ...\hbox(7.05+1.94)x345.0, glue set - 0.54599, direction TLT
-....\pdfstartlink(*+*)x* action goto name{Here}
+....\pdfstartlink(7.05+1.94)x345.0 action goto name{Here}
 ....\TU/lmr/m/n/10 m
 ....\TU/lmr/m/n/10 i
 ....\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
@@ -8221,7 +8221,7 @@ Completed box being shipped out [2]
 ....\glue(\rightskip) 0.0
 ...\glue(\baselineskip) 3.12
 ...\hbox(6.94+2.06)x345.0, glue set 0.78654, direction TLT
-....\pdfstartlink(*+*)x* action goto name{Here}
+....\pdfstartlink(6.94+2.06)x345.0 action goto name{Here}
 ....\TU/lmr/m/n/10 a
 ....\TU/lmr/m/n/10 u
 ....\discretionary (penalty 50)
@@ -8320,7 +8320,7 @@ Completed box being shipped out [2]
 ....\glue(\rightskip) 0.0
 ...\glue(\baselineskip) 3.0
 ...\hbox(6.94+1.94)x345.0, glue set 0.78569, direction TLT
-....\pdfstartlink(*+*)x* action goto name{Here}
+....\pdfstartlink(6.94+1.94)x345.0 action goto name{Here}
 ....\TU/lmr/m/n/10 u
 ....\TU/lmr/m/n/10 t
 ....\TU/lmr/m/n/10 ,
@@ -8416,7 +8416,7 @@ Completed box being shipped out [2]
 ....\glue(\rightskip) 0.0
 ...\glue(\baselineskip) 3.01
 ...\hbox(7.05+2.06)x345.0, glue set - 0.49713, direction TLT
-....\pdfstartlink(*+*)x* action goto name{Here}
+....\pdfstartlink(7.05+2.06)x345.0 action goto name{Here}
 ....\TU/lmr/m/n/10 i
 ....\TU/lmr/m/n/10 p
 ....\discretionary (penalty 50)
@@ -8516,7 +8516,7 @@ Completed box being shipped out [2]
 ....\glue(\rightskip) 0.0
 ...\glue(\baselineskip) 2.89
 ...\hbox(7.05+2.06)x345.0, glue set 0.72202, direction TLT
-....\pdfstartlink(*+*)x* action goto name{Here}
+....\pdfstartlink(7.05+2.06)x345.0 action goto name{Here}
 ....\TU/lmr/m/n/10 S
 ....\TU/lmr/m/n/10 e
 ....\TU/lmr/m/n/10 d
@@ -8610,7 +8610,7 @@ Completed box being shipped out [2]
 ....\glue(\rightskip) 0.0
 ...\glue(\baselineskip) 3.0
 ...\hbox(6.94+0.11)x345.0, glue set 0.09009, direction TLT
-....\pdfstartlink(*+*)x* action goto name{Here}
+....\pdfstartlink(6.94+0.11)x345.0 action goto name{Here}
 ....\TU/lmr/m/n/10 l
 ....\TU/lmr/m/n/10 e
 ....\TU/lmr/m/n/10 o
@@ -8713,7 +8713,7 @@ Completed box being shipped out [2]
 ....\glue(\rightskip) 0.0
 ...\glue(\baselineskip) 4.95
 ...\hbox(6.94+2.06)x345.0, glue set 0.9836, direction TLT
-....\pdfstartlink(*+*)x* action goto name{Here}
+....\pdfstartlink(6.94+2.06)x345.0 action goto name{Here}
 ....\TU/lmr/m/n/10 m
 ....\TU/lmr/m/n/10 a
 ....\TU/lmr/m/n/10 u
@@ -8812,7 +8812,7 @@ Completed box being shipped out [2]
 ....\glue(\rightskip) 0.0
 ...\glue(\baselineskip) 3.0
 ...\hbox(6.94+1.94)x345.0, glue set 0.17186, direction TLT
-....\pdfstartlink(*+*)x* action goto name{Here}
+....\pdfstartlink(6.94+1.94)x345.0 action goto name{Here}
 ....\TU/lmr/m/n/10 M
 ....\TU/lmr/m/n/10 a
 ....\TU/lmr/m/n/10 u
@@ -8901,7 +8901,7 @@ Completed box being shipped out [2]
 ....\glue(\rightskip) 0.0
 ...\glue(\baselineskip) 3.12
 ...\hbox(6.94+2.06)x345.0, glue set - 0.83942, direction TLT
-....\pdfstartlink(*+*)x* action goto name{Here}
+....\pdfstartlink(6.94+2.06)x345.0 action goto name{Here}
 ....\TU/lmr/m/n/10 s
 ....\TU/lmr/m/n/10 e
 ....\TU/lmr/m/n/10 m
@@ -9004,7 +9004,7 @@ Completed box being shipped out [2]
 ...\glue 0.0 plus 0.0001fil
 ..\glue(\baselineskip) 23.34
 ..\hbox(6.66+0.0)x345.0, direction TLT
-...\pdfstartlink(*+*)x* action goto name{Here}
+...\pdfstartlink(6.66+0.0)x345.0 action goto name{Here}
 ...\hbox(6.66+0.0)x345.0, glue set 170.0fil, direction TLT
 ....\glue 0.0 plus 1.0fil
 ....\TU/lmr/m/n/10 2
@@ -9023,7 +9023,7 @@ Completed box being shipped out [3]
 ..\vbox(550.0+0.0)x345.0, direction TLT
 ...\glue(\topskip) 2.95
 ...\hbox(7.05+1.94)x345.0, glue set - 0.02495, direction TLT
-....\pdfstartlink(*+*)x* action goto name{Here}
+....\pdfstartlink(7.05+1.94)x345.0 action goto name{Here}
 ....\TU/lmr/m/n/10 f
 ....\TU/lmr/m/n/10 a
 ....\discretionary (penalty 50)
@@ -9129,7 +9129,7 @@ Completed box being shipped out [3]
 ....\glue(\rightskip) 0.0
 ...\glue(\baselineskip) 3.01
 ...\hbox(7.05+1.94)x345.0, glue set - 0.54599, direction TLT
-....\pdfstartlink(*+*)x* action goto name{Here}
+....\pdfstartlink(7.05+1.94)x345.0 action goto name{Here}
 ....\TU/lmr/m/n/10 m
 ....\TU/lmr/m/n/10 i
 ....\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
@@ -9237,7 +9237,7 @@ Completed box being shipped out [3]
 ....\glue(\rightskip) 0.0
 ...\glue(\baselineskip) 3.12
 ...\hbox(6.94+2.06)x345.0, glue set 0.78654, direction TLT
-....\pdfstartlink(*+*)x* action goto name{Here}
+....\pdfstartlink(6.94+2.06)x345.0 action goto name{Here}
 ....\TU/lmr/m/n/10 a
 ....\TU/lmr/m/n/10 u
 ....\discretionary (penalty 50)
@@ -9336,7 +9336,7 @@ Completed box being shipped out [3]
 ....\glue(\rightskip) 0.0
 ...\glue(\baselineskip) 3.0
 ...\hbox(6.94+1.94)x345.0, glue set 0.78569, direction TLT
-....\pdfstartlink(*+*)x* action goto name{Here}
+....\pdfstartlink(6.94+1.94)x345.0 action goto name{Here}
 ....\TU/lmr/m/n/10 u
 ....\TU/lmr/m/n/10 t
 ....\TU/lmr/m/n/10 ,
@@ -9432,7 +9432,7 @@ Completed box being shipped out [3]
 ....\glue(\rightskip) 0.0
 ...\glue(\baselineskip) 3.01
 ...\hbox(7.05+2.06)x345.0, glue set - 0.49713, direction TLT
-....\pdfstartlink(*+*)x* action goto name{Here}
+....\pdfstartlink(7.05+2.06)x345.0 action goto name{Here}
 ....\TU/lmr/m/n/10 i
 ....\TU/lmr/m/n/10 p
 ....\discretionary (penalty 50)
@@ -9532,7 +9532,7 @@ Completed box being shipped out [3]
 ....\glue(\rightskip) 0.0
 ...\glue(\baselineskip) 2.89
 ...\hbox(7.05+2.06)x345.0, glue set 0.72202, direction TLT
-....\pdfstartlink(*+*)x* action goto name{Here}
+....\pdfstartlink(7.05+2.06)x345.0 action goto name{Here}
 ....\TU/lmr/m/n/10 S
 ....\TU/lmr/m/n/10 e
 ....\TU/lmr/m/n/10 d
@@ -9626,7 +9626,7 @@ Completed box being shipped out [3]
 ....\glue(\rightskip) 0.0
 ...\glue(\baselineskip) 3.0
 ...\hbox(6.94+0.11)x345.0, glue set 0.09009, direction TLT
-....\pdfstartlink(*+*)x* action goto name{Here}
+....\pdfstartlink(6.94+0.11)x345.0 action goto name{Here}
 ....\TU/lmr/m/n/10 l
 ....\TU/lmr/m/n/10 e
 ....\TU/lmr/m/n/10 o
@@ -9729,7 +9729,7 @@ Completed box being shipped out [3]
 ....\glue(\rightskip) 0.0
 ...\glue(\baselineskip) 4.95
 ...\hbox(6.94+2.06)x345.0, glue set 0.9836, direction TLT
-....\pdfstartlink(*+*)x* action goto name{Here}
+....\pdfstartlink(6.94+2.06)x345.0 action goto name{Here}
 ....\TU/lmr/m/n/10 m
 ....\TU/lmr/m/n/10 a
 ....\TU/lmr/m/n/10 u
@@ -9828,7 +9828,7 @@ Completed box being shipped out [3]
 ....\glue(\rightskip) 0.0
 ...\glue(\baselineskip) 3.0
 ...\hbox(6.94+1.94)x345.0, glue set 0.17186, direction TLT
-....\pdfstartlink(*+*)x* action goto name{Here}
+....\pdfstartlink(6.94+1.94)x345.0 action goto name{Here}
 ....\TU/lmr/m/n/10 M
 ....\TU/lmr/m/n/10 a
 ....\TU/lmr/m/n/10 u
@@ -9918,7 +9918,7 @@ Completed box being shipped out [3]
 ...\penalty 150
 ...\glue(\baselineskip) 5.58
 ...\hbox(4.48+1.94)x345.0, glue set 311.31fil, direction TLT
-....\pdfstartlink(*+*)x* action goto name{Here}
+....\pdfstartlink(4.48+1.94)x33.69 action goto name{Here}
 ....\TU/lmr/m/n/10 s
 ....\TU/lmr/m/n/10 e
 ....\TU/lmr/m/n/10 m
@@ -14849,7 +14849,7 @@ Completed box being shipped out [4]
 ...\glue(\parskip) 0.0
 ...\glue(\lineskip) 1.0
 ...\hbox(13.40788+6.85951)x345.0, glue set 268.36963fil, direction TLT
-....\pdfstartlink(*+*)x* action goto name{Here}
+....\pdfstartlink(6.94+0.11)x38.06 action goto name{Here}
 ....\localpar
 .....\localinterlinepenalty=0
 .....\localbrokenpenalty=0
@@ -14894,7 +14894,7 @@ Completed box being shipped out [4]
 ...\glue(\parskip) 0.0
 ...\glue(\lineskip) 1.0
 ...\hbox(13.40788+6.85951)x345.0, glue set 268.36963fil, direction TLT
-....\pdfstartlink(*+*)x* action goto name{Here}
+....\pdfstartlink(13.40788+6.85951)x52.74037 action goto name{Here}
 ....\localpar
 .....\localinterlinepenalty=0
 .....\localbrokenpenalty=0
