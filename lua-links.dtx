@@ -363,9 +363,17 @@ end, 'lua_links')
    Maybe you forgot to switch the engine in your editor?}
 \fi
 %    \end{macrocode}
-% Otherwise there is not much to do at the moment.
+% Some option handling
 %    \begin{macrocode}
 \newcount \LuaLinksMode
+\DeclareOption{discard}{\LuaLinksMode=\numexpr\LuaLinksMode+1\relax}
+\DeclareOption{tightH}{\LuaLinksMode=\numexpr\LuaLinksMode+2\relax}
+\DeclareOption{tightV}{\LuaLinksMode=\numexpr\LuaLinksMode+4\relax}
+\DeclareOption{unbox}{\LuaLinksMode=\numexpr\LuaLinksMode+8\relax}
+\ProcessOptions\relax
+%    \end{macrocode}
+% Otherwise there is not much to do at the moment.
+%    \begin{macrocode}
 \directlua{require'lua-links'}
 %    \end{macrocode}
 % \iffalse

@@ -1,8 +1,7 @@
 \input{regression-test}
 \documentclass{article}
 \usepackage{blindtext}
-\usepackage{lua-links}
-\LuaLinksMode=1
+\usepackage[discard]{lua-links}
 \begin{document}
 \showoutput
 \START
