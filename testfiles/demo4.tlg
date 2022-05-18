@@ -4522,9 +4522,7 @@ Completed box being shipped out [2]
 ..\vbox(12.0+0.0)x345.0, glue set 12.0fil, direction TLT
 ...\glue 0.0 plus 1.0fil
 ...\hbox(0.0+0.0)x345.0, direction TLT
-....\pdfstartlink(0.0+0.0)x345.0 action goto name{Here}
 ....\hbox(0.0+0.0)x345.0, direction TLT
-....\pdfendlink
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
 ..\vbox(550.0+0.0)x345.0, direction TLT
@@ -4930,8 +4928,8 @@ Completed box being shipped out [2]
 .....\localbrokenpenalty=0
 .....\localleftbox=null
 .....\localrightbox=null
-....\pdfstartlink(6.94+2.06)x345.0 action goto name{Here}
 ....\hbox(0.0+0.0)x15.0, direction TLT
+....\pdfstartlink(6.94+2.06)x330.0 action goto name{Here}
 ....\TU/lmr/m/n/10 L
 ....\TU/lmr/m/n/10 o
 ....\TU/lmr/m/n/10 r
@@ -9004,12 +9002,12 @@ Completed box being shipped out [2]
 ...\glue 0.0 plus 0.0001fil
 ..\glue(\baselineskip) 23.34
 ..\hbox(6.66+0.0)x345.0, direction TLT
-...\pdfstartlink(6.66+0.0)x345.0 action goto name{Here}
 ...\hbox(6.66+0.0)x345.0, glue set 170.0fil, direction TLT
 ....\glue 0.0 plus 1.0fil
+....\pdfstartlink(6.66+0.0)x5.0 action goto name{Here}
 ....\TU/lmr/m/n/10 2
+....\pdfendlink
 ....\glue 0.0 plus 1.0fil
-...\pdfendlink
 Completed box being shipped out [3]
 \vbox(633.0+0.22)x407.0, direction TLT
 .\glue 16.0
@@ -14854,8 +14852,8 @@ Completed box being shipped out [4]
 .....\localbrokenpenalty=0
 .....\localleftbox=null
 .....\localrightbox=null
-....\pdfstartlink(6.94+0.11)x38.06 action goto name{Here}
 ....\hbox(0.0+0.0)x15.0, direction TLT
+....\pdfstartlink(6.94+0.11)x23.06 action goto name{Here}
 ....\TU/lmr/m/n/10 H
 ....\TU/lmr/m/n/10 a
 ....\TU/lmr/m/n/10 l
@@ -14899,13 +14897,14 @@ Completed box being shipped out [4]
 .....\localbrokenpenalty=0
 .....\localleftbox=null
 .....\localrightbox=null
-....\pdfstartlink(13.40788+6.85951)x52.74037 action goto name{Here}
 ....\hbox(0.0+0.0)x15.0, direction TLT
+....\pdfstartlink(6.94+0.11)x23.06 action goto name{Here}
 ....\TU/lmr/m/n/10 H
 ....\TU/lmr/m/n/10 a
 ....\TU/lmr/m/n/10 l
 ....\TU/lmr/m/n/10 l
 ....\TU/lmr/m/n/10 o
+....\pdfendlink
 ....\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
 ....\mathon
 ....\hbox(13.40788+6.85951)x11.35037, direction TLT
@@ -14913,18 +14912,25 @@ Completed box being shipped out [4]
 ......\hbox(0.0+0.0)x1.2, shifted -2.5, direction TLT
 ......\vbox(13.40788+6.85951)x8.95038, direction TLT
 .......\hbox(6.6428+0.0)x8.95038, direction TLT
+........\pdfstartlink(4.30554+0.0)x4.65627 action goto name{Here}
 ........\OML/cmm/m/it/10 e
+........\pdfendlink
 ........\hbox(3.01389+0.0)x4.29411, shifted -3.62892, direction TLT
+.........\pdfstartlink(3.01389+0.0)x3.79411 action goto name{Here}
 .........\OML/cmm/m/it/7 e
+.........\pdfendlink
 .......\kern4.06508 (font)
 .......\rule(0.39998+0.0)x*
 .......\kern3.25674 (font)
 .......\hbox(5.90277+0.0)x8.95038, direction TLT
+........\pdfstartlink(4.30554+0.0)x4.65627 action goto name{Here}
 ........\OML/cmm/m/it/10 e
+........\pdfendlink
 ........\hbox(3.01389+0.0)x4.29411, shifted -2.88889, direction TLT
+.........\pdfstartlink(3.01389+0.0)x3.79411 action goto name{Here}
 .........\OML/cmm/m/it/7 e
+.........\pdfendlink
 ......\hbox(0.0+0.0)x1.2, shifted -2.5, direction TLT
-....\pdfendlink
 ....\mathoff
 ....\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
 ....\TU/lmr/m/n/10 W

@@ -259,12 +259,13 @@ function add_link_hlist(head, outer_value, box, mode)
   local last_value = outer_value
   local first, delayed
   local dimen_mode = mode & 6
+  local unpack_mode = mode & 8 == 8
 
   for n, id, subtype in traverse(head) do
     if mode & 1 == 1 and delayed_ids[id] then
       delayed = delayed or n
     else
-      local new_value = has_attribute(n, attr)
+      local new_value = (not unpack_mode or id ~= hlist_t and id ~= vlist_t) and has_attribute(n, attr)
       if new_value ~= last_value then
         if last_value then
           local start_link = nodecopy(links[last_value])
