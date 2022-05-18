@@ -17,7 +17,7 @@ If you want to try it anyway, start with
 \href{https://latex-project.org}{%
   A rather long paragraph which in it's entirety forms a link.
   We try to make sure that this long link does not span unnecessary whitespace.
-
+  \endgraf
   Especially around mathematics this can lead to odd effects, e.g.
   \[
     \sum_{i=1}^n \frac{x^i}{i!}

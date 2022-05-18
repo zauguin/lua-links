@@ -55,7 +55,7 @@ Completed box being shipped out [1]
 ......\hbox(0.0+0.0)x0.0, direction TLT
 ......\glue 5.0
 .....\penalty 0
-.....\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 1] /H /I /C [0.724708 0.4 0.717646] /A <<\ETC.} action user{}
+.....\pdfstartlink(7.05+2.06)x329.31999 attr{/Subtype /Link /Border [0 0 1] /H /I /C [0.724708 0.4 0.717646] /A <<\ETC.} action user{}
 .....\TU/lmr/m/n/10 T
 .....\kern-0.83 (font)
 .....\TU/lmr/m/n/10 e
@@ -155,11 +155,13 @@ Completed box being shipped out [1]
 .....\TU/lmr/m/n/10 a
 .....\TU/lmr/m/n/10 s
 .....\TU/lmr/m/n/10 e
+.....\pdfendlink
 .....\glue(\rightskip) 0.0 plus 1.0fil
 ....\penalty 150
 ....\glue(\baselineskip) 2.89
 ....\hbox(7.05+2.06)x345.0, glue set 28.445fil, direction TLT
 .....\glue(\leftskip) 0.0 plus 1.0fil
+.....\pdfstartlink(7.05+2.06)x288.10999 attr{/Subtype /Link /Border [0 0 1] /H /I /C [0.724708 0.4 0.717646] /A <<\ETC.} action user{}
 .....\TU/lmr/m/n/10 o
 .....\TU/lmr/m/n/10 n
 .....\discretionary (penalty 50)
@@ -249,11 +251,13 @@ Completed box being shipped out [1]
 .....\TU/lmr/m/n/10 f
 .....\TU/lmr/m/n/10 o
 .....\TU/lmr/m/n/10 r
+.....\pdfendlink
 .....\glue(\rightskip) 0.0 plus 1.0fil
 ....\penalty 150
 ....\glue(\baselineskip) 3.0
 ....\hbox(6.94+2.06)x345.0, glue set 133.275fil, direction TLT
 .....\glue(\leftskip) 0.0 plus 1.0fil
+.....\pdfstartlink(6.94+2.06)x78.45 attr{/Subtype /Link /Border [0 0 1] /H /I /C [0.724708 0.4 0.717646] /A <<\ETC.} action user{}
 .....\TU/lmr/m/n/10 T
 .....\kern-0.83 (font)
 .....\TU/lmr/m/n/10 e
@@ -293,7 +297,7 @@ Completed box being shipped out [1]
 ......\localleftbox=null
 ......\localrightbox=null
 .....\hbox(0.0+0.0)x0.0, direction TLT
-.....\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 1] /H /I /C [0.724708 0.4 0.717646] /A <<\ETC.} action user{}
+.....\pdfstartlink(7.05+2.06)x329.31999 attr{/Subtype /Link /Border [0 0 1] /H /I /C [0.724708 0.4 0.717646] /A <<\ETC.} action user{}
 .....\TU/lmr/m/n/10 T
 .....\kern-0.83 (font)
 .....\TU/lmr/m/n/10 e
@@ -409,7 +413,7 @@ Completed box being shipped out [1]
 ......\localleftbox=null
 ......\localrightbox=null
 .....\hbox(0.0+0.0)x0.0, direction TLT
-.....\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 1] /H /I /C [0.724708 0.4 0.717646] /A <<\ETC.} action user{}
+.....\pdfstartlink(7.05+2.06)x288.10999 attr{/Subtype /Link /Border [0 0 1] /H /I /C [0.724708 0.4 0.717646] /A <<\ETC.} action user{}
 .....\TU/lmr/m/n/10 o
 .....\TU/lmr/m/n/10 n
 .....\discretionary (penalty 50)
@@ -515,7 +519,7 @@ Completed box being shipped out [1]
 ......\localleftbox=null
 ......\localrightbox=null
 .....\hbox(0.0+0.0)x0.0, direction TLT
-.....\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 1] /H /I /C [0.724708 0.4 0.717646] /A <<\ETC.} action user{}
+.....\pdfstartlink(6.94+2.06)x78.45 attr{/Subtype /Link /Border [0 0 1] /H /I /C [0.724708 0.4 0.717646] /A <<\ETC.} action user{}
 .....\TU/lmr/m/n/10 T
 .....\kern-0.83 (font)
 .....\TU/lmr/m/n/10 e
