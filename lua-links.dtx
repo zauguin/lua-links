@@ -100,7 +100,7 @@ local properties = node.direct.get_properties_table()
 
 local has_attribute = node.direct.has_attribute
 local set_attribute = node.direct.set_attribute
-local dimensions = node.direct.dimensions
+local rangedimensions = node.direct.rangedimensions
 local flush_node = node.direct.flush_node
 local getattr = node.direct.getattributelist
 local getboth = node.direct.getboth
@@ -255,17 +255,29 @@ function add_link_hlist(head, outer_value, box, mode)
 % slide(head)
   local last_value = outer_value
   local first, delayed
+  local dimen_mode = mode & 6
+
   for n, id, subtype in traverse(head) do
-    if mode ~= 0 and delayed_ids[id] then
+    if mode & 1 == 1 and delayed_ids[id] then
       delayed = delayed or n
     else
       local new_value = has_attribute(n, attr)
       if new_value ~= last_value then
         if last_value then
           local start_link = nodecopy(links[last_value])
+          if dimen_mode ~= 0 then
+            local w, h, d = rangedimensions(box, first, delayed or n)
+            if dimen_mode & 2 == 2 then
+              setfield(start_link, 'width', w)
+            end
+            if dimen_mode & 4 == 4 then
+              setfield(start_link, 'height', h)
+              setfield(start_link, 'depth', d)
+            end
+          end
           head = insert_before(head, first, start_link)
           local end_link = nodenew(whatsit_t, end_link_t)
-          head = insert_before(head, n, end_link)
+          head = insert_before(head, delayed or n, end_link)
         end
         if new_value then
           first = delayed or n
@@ -286,6 +298,21 @@ function add_link_hlist(head, outer_value, box, mode)
   end
   if last_value then
     local start_link = nodecopy(links[last_value])
+    if dimen_mode ~= 0 then
+      local w, h, d
+      if delayed then
+        w, h, d = rangedimensions(box, first, delayed)
+      else
+        w, h, d = rangedimensions(box, first)
+      end
+      if dimen_mode & 2 == 2 then
+        setfield(start_link, 'width', w)
+      end
+      if dimen_mode & 4 == 4 then
+        setfield(start_link, 'height', h)
+        setfield(start_link, 'depth', d)
+      end
+    end
     head = insert_before(head, first, start_link)
     local end_link = nodenew(whatsit_t, end_link_t)
     if delayed then
