@@ -1,0 +1,31 @@
+% This is adapted from Ulrike's answer to Kumaresh PS's question from
+% https://tex.stackexchange.com/questions/644540/hyperlink-occurs-empty-space-also-for-centered-text/644543#644543
+\input{regression-test}
+\RequirePackage{pdfmanagement-testphase}
+\DocumentMetadata{}
+\documentclass{article}
+
+\usepackage[discard,tightH,tightV,unbox]{lua-links}
+\usepackage{hyperref}
+
+\begin{document}
+
+\showoutput
+\START
+\begin{center}
+\href{www.google.com}{Text for Testingphase
+onlyText for Testingphase onlyText for Testingphase onlyText for Testingphase
+onlyText for Testingphase onlyText for Testingphase only}
+
+\bigskip
+
+\href{www.google.com}{Text for Testingphase
+onlyText for Testingphase onlyText for Testingphase}\\
+\href{www.google.com}{onlyText for Testingphase
+onlyText for Testingphase onlyText for}\\
+\href{www.google.com}{Testingphase only}
+\end{center}
+
+\clearpage
+\END
+\end{document}
