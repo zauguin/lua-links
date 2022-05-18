@@ -1,0 +1,32 @@
+\input{regression-test}
+\documentclass{article}
+\usepackage{blindtext}
+\usepackage{lua-links}
+\LuaLinksMode=15
+\begin{document}
+\showoutput
+\START
+\pdfextension dest name{Here} xyz
+\blindtext[5]%
+
+\LuaLinkStart{\pdfextension startlink goto name {Here}}%
+\blindtext[5]%
+
+\LuaLinkStop
+\blindtext[5]%
+
+\LuaLinkStart{\pdfextension startlink goto name {Here}}%
+Hallo
+\LuaLinkStop
+$\displaystyle\frac{e^e}{e^e}$
+Welt
+
+\LuaLinkStart{\pdfextension startlink goto name {Here}}%
+Hallo
+$\displaystyle\frac{e^e}{e^e}$
+\LuaLinkStop
+Welt
+
+\clearpage
+\END
+\end{document}
