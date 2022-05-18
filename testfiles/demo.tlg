@@ -4925,12 +4925,12 @@ Completed box being shipped out [2]
 ...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 3.12
 ...\hbox(6.94+2.06)x345.0, glue set 0.72125, direction TLT
-....\pdfstartlink(*+*)x* action goto name{Here}
 ....\localpar
 .....\localinterlinepenalty=0
 .....\localbrokenpenalty=0
 .....\localleftbox=null
 .....\localrightbox=null
+....\pdfstartlink(*+*)x* action goto name{Here}
 ....\hbox(0.0+0.0)x15.0, direction TLT
 ....\TU/lmr/m/n/10 L
 ....\TU/lmr/m/n/10 o
@@ -14849,12 +14849,12 @@ Completed box being shipped out [4]
 ...\glue(\parskip) 0.0
 ...\glue(\lineskip) 1.0
 ...\hbox(13.40788+6.85951)x345.0, glue set 268.36963fil, direction TLT
-....\pdfstartlink(*+*)x* action goto name{Here}
 ....\localpar
 .....\localinterlinepenalty=0
 .....\localbrokenpenalty=0
 .....\localleftbox=null
 .....\localrightbox=null
+....\pdfstartlink(*+*)x* action goto name{Here}
 ....\hbox(0.0+0.0)x15.0, direction TLT
 ....\TU/lmr/m/n/10 H
 ....\TU/lmr/m/n/10 a
@@ -14894,12 +14894,12 @@ Completed box being shipped out [4]
 ...\glue(\parskip) 0.0
 ...\glue(\lineskip) 1.0
 ...\hbox(13.40788+6.85951)x345.0, glue set 268.36963fil, direction TLT
-....\pdfstartlink(*+*)x* action goto name{Here}
 ....\localpar
 .....\localinterlinepenalty=0
 .....\localbrokenpenalty=0
 .....\localleftbox=null
 .....\localrightbox=null
+....\pdfstartlink(*+*)x* action goto name{Here}
 ....\hbox(0.0+0.0)x15.0, direction TLT
 ....\TU/lmr/m/n/10 H
 ....\TU/lmr/m/n/10 a

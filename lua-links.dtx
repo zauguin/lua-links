@@ -85,6 +85,7 @@ local dir_t = node.id'dir'
 local math_t = node.id'math'
 local penalty_t = node.id'penalty'
 local whatsit_t = node.id'whatsit'
+local local_par_t = node.id'local_par'
 local start_link_t = node.subtype'pdf_start_link'
 local end_link_t = node.subtype'pdf_end_link'
 
@@ -94,6 +95,8 @@ local delayed_ids = {
   [glue_t] = true,
   [kern_t] = true,
   [penalty_t] = true,
+
+  [local_par_t] = true,
 }
 
 local properties = node.direct.get_properties_table()
@@ -280,7 +283,7 @@ function add_link_hlist(head, outer_value, box, mode)
           head = insert_before(head, delayed or n, end_link)
         end
         if new_value then
-          first = delayed or n
+          first = n
         end
         last_value = new_value
       end
