@@ -254,7 +254,7 @@ end
 function add_link_hlist(head, outer_value, box, mode)
 % slide(head)
   local last_value = outer_value
-  local delayed
+  local first, delayed
   for n, id, subtype in traverse(head) do
     if mode ~= 0 and delayed_ids[id] then
       delayed = delayed or n
@@ -262,12 +262,13 @@ function add_link_hlist(head, outer_value, box, mode)
       local new_value = has_attribute(n, attr)
       if new_value ~= last_value then
         if last_value then
+          local start_link = nodecopy(links[last_value])
+          head = insert_before(head, first, start_link)
           local end_link = nodenew(whatsit_t, end_link_t)
           head = insert_before(head, n, end_link)
         end
         if new_value then
-          local start_link = nodecopy(links[new_value])
-          head = insert_before(head, delayed or n, start_link)
+          first = delayed or n
         end
         last_value = new_value
       end
@@ -284,6 +285,8 @@ function add_link_hlist(head, outer_value, box, mode)
     end
   end
   if last_value then
+    local start_link = nodecopy(links[last_value])
+    head = insert_before(head, first, start_link)
     local end_link = nodenew(whatsit_t, end_link_t)
     if delayed then
       head = insert_before(head, delayed, end_link)
