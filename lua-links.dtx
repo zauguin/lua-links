@@ -372,9 +372,27 @@ end, 'lua_links')
 \DeclareOption{unbox}{\LuaLinksMode=\numexpr\LuaLinksMode+8\relax}
 \ProcessOptions\relax
 %    \end{macrocode}
-% Otherwise there is not much to do at the moment.
+% Now load the module.
 %    \begin{macrocode}
 \directlua{require'lua-links'}
+%    \end{macrocode}
+% Since this is \LaTeX, we will continue by patching some thing which really shouldn't be patched.
+%    \begin{macrocode}
+\ExplSyntaxOn
+\str_if_exist:NF \c_sys_backend_str {
+  \sys_load_backend:n {}
+}
+\cs_gset_protected:Npx \__pdf_backend_link_begin:nnnw #1#2#3 {%
+  \LuaLinkStart {
+    \exp_args:No \use:n {
+      \__pdf_backend_link_begin:nnnw {#1}{#2}{#3}
+    }
+  }
+}
+\cs_gset_protected:Npn \__pdf_backend_link_end: {%
+  \LuaLinkStop
+}
+\ExplSyntaxOff
 %    \end{macrocode}
 % \iffalse
 %</package>
